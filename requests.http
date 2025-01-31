@@ -1,0 +1,25 @@
+### GET Weather Forecasts
+GET http://localhost:5260/weatherforecast
+
+### POST Create Weather Forecast
+POST http://localhost:5260/weatherforecast
+Content-Type: application/json
+
+{
+  "date": "2023-10-10T00:00:00Z",
+  "temperatureC": 25,
+  "summary": "Warm"
+}
+
+### PUT Update Weather Forecast
+PUT http://localhost:5260/weatherforecast/1
+Content-Type: application/json
+
+{
+  "date": "2023-10-11T00:00:00Z",
+  "temperatureC": 30,
+  "summary": "Hot"
+}
+
+### DELETE Weather Forecast
+DELETE http://localhost:5260/weatherforecast/1
